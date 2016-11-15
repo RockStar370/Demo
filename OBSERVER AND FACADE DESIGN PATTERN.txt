@@ -1,0 +1,34 @@
+For the ClockrBot system, the Observer Design Pattern will be the choice for 
+the system. On the Supervisor Page, the Disable, Edit, Clock Out GA, UnDo, 
+Information Report, View Real-Time, and Print component features are the
+sub-systems uses the Observer Design Pattern. On the GA Page, the 
+Clock In and Clock Out, and Break Checkbox component features are the 
+sub-systems also uses the Observer Design Pattern.The reason why I
+chosed the Observer Design Pattern is because it is a one-to-many dependency
+between the objects. If one of the objects changes the state, then all its
+dependents identify the changes and will be automatically updated. The Observer
+design pattern will likely improve the ClockrBot System like for instance the
+GA page whenever the GA clock in, clock out, or the break checkbox is pressed,
+each one of the sub-system will be notified and the system as a whole will update
+the User-Interface (UI) displaying new information, this will also apply the same
+to the supervisor page as well with its own component features. With Observer Design
+Pattern, it will allow the system as a whole to run efficiently allowing all the
+sub-system components to correspond each other on the new changes that occurs 
+and the system will update the information automatically.
+
+Facade design pattern is another choice for the design pattern. From the understanding 
+about the complexity of how the ClockrBot clock in and out system performs,
+Facade makes it much simplier to use that provide cleaner interface to the system.
+The complexity of the backend system will be hidden to where the client will only 
+experience the simple inteface that is much more user friendly. Many feature components
+in the GA and Supervisor page will be the sub-systems that uses the Facade design pattern.
+For the GA page, with the use of the Facade design pattern, when the GA clocks in and clocks
+out or hit the break checkbox, the data that was inputted should read and write 
+meaning "Display" the time when the GA clocks in and out on the display box or indicate when
+break was inputted in an organize fashion. For supervisor page using Facade pattern,
+components features like the Disable, Edit, Clock Out GA, UnDo, Information Report, 
+View Real-Time, and Print component features, those data components should be organize to be
+responsive to correspond to each other to get the right executable tasks for the supervisor. 
+With the use of the Facade pattern, the ClockrBot system will performance in an efficient 
+organize manner transfering many data to correspond with other components in the system to
+meet the client's needs.
